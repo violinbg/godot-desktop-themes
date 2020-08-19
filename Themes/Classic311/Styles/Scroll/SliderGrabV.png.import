@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/SliderGrabV.png-d3b277912a74ad6388c3d0969006ca2b.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Themes/Classic311/Styles/Scroll/SliderGrabV.png"
+dest_files=[ "res://.import/SliderGrabV.png-d3b277912a74ad6388c3d0969006ca2b.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

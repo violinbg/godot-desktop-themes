@@ -1,0 +1,468 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Themes/TestBed.gd" type="Script" id=1]
+[ext_resource path="res://Themes/TestDialog.gd" type="Script" id=3]
+
+[sub_resource type="ButtonGroup" id=1]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="GUI" type="Control" parent="."]
+anchor_right = 1.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TaskBar" type="Panel" parent="GUI"]
+anchor_right = 1.0
+margin_top = -1.0
+margin_bottom = 56.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/TaskBar"]
+margin_left = 24.0
+margin_top = 25.0
+margin_right = 80.0
+margin_bottom = 39.0
+text = "Theme:"
+
+[node name="Themes" type="OptionButton" parent="GUI/TaskBar"]
+margin_left = 88.0
+margin_top = 17.0
+margin_right = 250.0
+margin_bottom = 43.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="GUI/TaskBar"]
+margin_left = 272.0
+margin_top = 17.0
+margin_right = 390.0
+margin_bottom = 43.0
+text = "Controls"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="GUI/TaskBar"]
+margin_left = 400.0
+margin_top = 17.0
+margin_right = 518.0
+margin_bottom = 43.0
+text = "Alert Dialog"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="GUI/TaskBar"]
+margin_left = 528.0
+margin_top = 17.0
+margin_right = 646.0
+margin_bottom = 43.0
+text = "Confirm Dialog"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="GUI/TaskBar"]
+margin_left = 656.0
+margin_top = 17.0
+margin_right = 774.0
+margin_bottom = 43.0
+text = "File Dialog"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsDialog" type="WindowDialog" parent="GUI"]
+margin_left = 277.0
+margin_top = 175.0
+margin_right = 784.0
+margin_bottom = 524.0
+window_title = "Demo Window"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabContainer" type="TabContainer" parent="GUI/ControlsDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+tab_align = 0
+drag_to_rearrange_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="Control" parent="GUI/ControlsDialog/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Control" type="Control" parent="GUI/ControlsDialog/TabContainer/Buttons"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 17.0
+margin_top = 9.0
+margin_right = 154.0
+margin_bottom = 41.0
+text = "Button 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 167.0
+margin_top = 9.0
+margin_right = 304.0
+margin_bottom = 41.0
+text = "Button 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 317.0
+margin_top = 9.0
+margin_right = 454.0
+margin_bottom = 41.0
+disabled = true
+text = "Disabled"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 186.0
+margin_top = 66.0
+margin_right = 454.0
+margin_bottom = 88.0
+toggle_mode = true
+text = "Toggle Button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ToolButton" type="ToolButton" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 185.0
+margin_top = 254.0
+margin_right = 454.0
+margin_bottom = 279.0
+text = "Tool Button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 186.0
+margin_top = 101.0
+margin_right = 455.0
+margin_bottom = 123.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 186.0
+margin_top = 135.0
+margin_right = 455.0
+margin_bottom = 157.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButton" type="MenuButton" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 186.0
+margin_top = 169.0
+margin_right = 455.0
+margin_bottom = 191.0
+text = "Menu Button"
+flat = false
+
+[node name="CheckButton" type="CheckButton" parent="GUI/ControlsDialog/TabContainer/Buttons/Control"]
+margin_left = 186.0
+margin_top = 202.0
+margin_right = 455.0
+margin_bottom = 242.0
+text = "Check button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="GUI/ControlsDialog/TabContainer/Buttons"]
+margin_left = 17.0
+margin_top = 66.0
+margin_right = 172.0
+margin_bottom = 157.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RadioBox1" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Panel"]
+margin_left = 11.0
+margin_top = 16.0
+margin_right = 84.0
+margin_bottom = 30.0
+group = SubResource( 1 )
+text = "Option 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RadioBox2" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Panel"]
+margin_left = 11.0
+margin_top = 40.0
+margin_right = 84.0
+margin_bottom = 54.0
+group = SubResource( 1 )
+text = "Option 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RadioBox3" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Panel"]
+margin_left = 11.0
+margin_top = 63.0
+margin_right = 84.0
+margin_bottom = 77.0
+disabled = true
+group = SubResource( 1 )
+text = "Option 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Boxes" type="Panel" parent="GUI/ControlsDialog/TabContainer/Buttons"]
+margin_left = 17.0
+margin_top = 183.0
+margin_right = 172.0
+margin_bottom = 274.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Check Boxes"]
+margin_left = 14.0
+margin_top = 19.0
+margin_right = 96.0
+margin_bottom = 33.0
+text = "Option 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox2" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Check Boxes"]
+margin_left = 14.0
+margin_top = 40.0
+margin_right = 90.0
+margin_bottom = 54.0
+text = "Option 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox3" type="CheckBox" parent="GUI/ControlsDialog/TabContainer/Buttons/Check Boxes"]
+margin_left = 14.0
+margin_top = 61.0
+margin_right = 87.0
+margin_bottom = 75.0
+disabled = true
+text = "Option 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Editors" type="Control" parent="GUI/ControlsDialog/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="GUI/ControlsDialog/TabContainer/Editors"]
+margin_left = 17.0
+margin_top = 9.0
+margin_right = 459.0
+margin_bottom = 33.0
+text = "A nice texbox"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit2" type="LineEdit" parent="GUI/ControlsDialog/TabContainer/Editors"]
+margin_left = 17.0
+margin_top = 42.0
+margin_right = 459.0
+margin_bottom = 66.0
+text = "A read-only texbox"
+editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="GUI/ControlsDialog/TabContainer/Editors"]
+margin_left = 17.0
+margin_top = 73.0
+margin_right = 459.0
+margin_bottom = 162.0
+text = "Multiline text edit control."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit2" type="TextEdit" parent="GUI/ControlsDialog/TabContainer/Editors"]
+margin_left = 17.0
+margin_top = 171.0
+margin_right = 459.0
+margin_bottom = 260.0
+text = "Multiline text edit control.
+But unfortunatly it's read-only.
+So you cannot edit it."
+readonly = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox" type="SpinBox" parent="GUI/ControlsDialog/TabContainer/Editors"]
+margin_left = 17.0
+margin_top = 266.0
+margin_right = 459.0
+margin_bottom = 290.0
+suffix = "px"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Extra" type="Control" parent="GUI/ControlsDialog/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="HScrollBar2" type="HScrollBar" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 7.0
+margin_top = 42.0
+margin_right = 295.0
+margin_bottom = 60.0
+page = 5.0
+value = 50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VScrollBar" type="VScrollBar" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 318.0
+margin_top = 42.0
+margin_right = 337.0
+margin_bottom = 290.0
+page = 5.0
+value = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 7.0
+margin_top = 8.0
+margin_right = 469.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 7.0
+margin_top = 64.0
+margin_right = 293.0
+margin_bottom = 89.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSeparator" type="VSeparator" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 304.0
+margin_top = 42.0
+margin_right = 308.0
+margin_bottom = 290.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSlider" type="VSlider" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 337.0
+margin_top = 47.0
+margin_right = 379.0
+margin_bottom = 286.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tree" type="Tree" parent="GUI/ControlsDialog/TabContainer/Extra"]
+margin_left = 7.0
+margin_top = 94.0
+margin_right = 293.0
+margin_bottom = 286.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AcceptDialog" type="AcceptDialog" parent="GUI"]
+margin_left = 450.0
+margin_top = 285.0
+margin_right = 539.0
+margin_bottom = 343.0
+resizable = true
+dialog_text = "Hello world"
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="GUI"]
+margin_left = 402.0
+margin_top = 282.0
+margin_right = 602.0
+margin_bottom = 352.0
+resizable = true
+dialog_text = "Are you happy, today?"
+
+[node name="FileDialog" type="FileDialog" parent="GUI"]
+margin_left = 303.0
+margin_top = 200.0
+margin_right = 774.0
+margin_bottom = 482.0
+window_title = "Open a File"
+resizable = true
+mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="GUI/TaskBar/Themes" to="." method="_on_Themes_item_selected"]
+[connection signal="button_up" from="GUI/TaskBar/Button" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="GUI/TaskBar/Button2" to="." method="_on_Alert_button_up"]
+[connection signal="button_up" from="GUI/TaskBar/Button3" to="." method="_on_Confirm_button_up"]
+[connection signal="button_up" from="GUI/TaskBar/Button4" to="." method="_on_File_button_up"]
+[connection signal="gui_input" from="GUI/ControlsDialog" to="GUI/ControlsDialog" method="_on_Dialog_gui_input"]
+[connection signal="hide" from="GUI/ControlsDialog" to="GUI/ControlsDialog" method="_on_Dialog_hide"]
