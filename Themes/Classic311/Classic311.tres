@@ -360,7 +360,6 @@ Tree/icons/select_arrow = ExtResource( 31 )
 Tree/icons/unchecked = ExtResource( 35 )
 Tree/icons/updown = ExtResource( 34 )
 Tree/styles/bg = ExtResource( 30 )
-Tree/styles/bg_focus = ExtResource( 30 )
 Tree/styles/button_pressed = null
 Tree/styles/cursor = null
 Tree/styles/cursor_unfocused = null
