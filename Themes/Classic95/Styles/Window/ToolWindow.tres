@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=2]
+
+[ext_resource path="res://Themes/Classic95/Styles/Window/ToolWindow.png" type="Texture" id=1]
+
+[resource]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 25.0
+content_margin_bottom = 5.0
+texture = ExtResource( 1 )
+margin_left = 5.0
+margin_right = 5.0
+margin_top = 21.0
+margin_bottom = 4.0
