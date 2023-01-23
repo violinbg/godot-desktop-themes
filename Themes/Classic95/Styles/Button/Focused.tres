@@ -1,0 +1,15 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/Focused.png-ca29cabe31e83822c918a027f587eab4.stex"
+
+[resource]
+texture = SubResource( 1 )
+region_rect = Rect2( 0, 0, 15, 15 )
+margin_left = 6.0
+margin_right = 6.0
+margin_top = 6.0
+margin_bottom = 6.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1

@@ -9,14 +9,19 @@ onready var gui = $GUI
 
 var themes = {
 	0: ThemeItem.new("Default", "."),
-	1: ThemeItem.new("Classic 3.11", "res://Themes/Classic311/Classic311.tres")
+	1: ThemeItem.new("Classic 3.11", "res://Themes/Classic311/Classic311.tres"),
+	2: ThemeItem.new("Classic 95", "res://Themes/Classic95/Classic95.tres")
 }
 
 func _ready():
 	for key in themes:
 		var theme = themes[key]
 		themesCtrl.add_item(theme.name, key)
+	changeTheme(2) # pre-select Classic 95
 
+func changeTheme(index):
+	themesCtrl.select(index) 
+	_on_Themes_item_selected(index)
 
 func _on_Button_button_up():
 	#dialog.visible = true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/screenshot.png-024a21af5d37bf0f0dd0e2bccdd149d0.stex"
+path="res://.import/UpArrow.png-af56cee7a8202ef7ac5d7c40acb9a378.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://screenshot.png"
-dest_files=[ "res://.import/screenshot.png-024a21af5d37bf0f0dd0e2bccdd149d0.stex" ]
+source_file="res://Themes/Classic95/Styles/General/UpArrow.png"
+dest_files=[ "res://.import/UpArrow.png-af56cee7a8202ef7ac5d7c40acb9a378.stex" ]
 
 [params]
 

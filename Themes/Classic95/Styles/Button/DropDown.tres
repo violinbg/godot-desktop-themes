@@ -1,0 +1,16 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/DropDown.png-c4b565d35330c2f770c83b0691a7103f.stex"
+
+[resource]
+content_margin_left = 5.0
+texture = SubResource( 1 )
+region_rect = Rect2( 0, 0, 21, 21 )
+margin_left = 2.0
+margin_right = 18.0
+margin_top = 4.0
+margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
