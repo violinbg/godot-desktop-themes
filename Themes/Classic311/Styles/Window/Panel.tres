@@ -1,14 +1,17 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=2]
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bxpx4pbhvqvh4"]
 
-[ext_resource path="res://Themes/Classic311/Styles/Window/Panel.png" type="Texture" id=1]
+[ext_resource type="Texture2D" uid="uid://dnn7eb8llsawx" path="res://Themes/Classic311/Styles/Window/Panel.png" id="1"]
 
 [resource]
-texture = ExtResource( 1 )
-region_rect = Rect2( 0, 0, 14, 32 )
-margin_left = 6.0
-margin_right = 6.0
-margin_top = 23.0
-margin_bottom = 6.0
-expand_margin_top = 24.0
+texture = ExtResource("1")
+texture_margin_left = 7.0
+texture_margin_top = 24.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+expand_margin_left = 4.0
+expand_margin_top = 23.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 14, 32)
