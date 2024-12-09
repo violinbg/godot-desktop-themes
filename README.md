@@ -1,7 +1,7 @@
 # Godot Desktop Themes
 
 This is a repository of Themes for Godot that replicate the Desktop experience.
-As of now this has been tested with Godot 3.5.1
+As of now this has been tested with Godot 4.3
 
 
 ## Themes
