@@ -1,0 +1,13 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://db8yi3lyllpgi"]
+
+[ext_resource type="Texture2D" uid="uid://ddt1t1tj1nerd" path="res://Themes/Modern11/Styles/Text/LineEdit.png" id="1"]
+
+[resource]
+texture = ExtResource("1")
+texture_margin_left = 6.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 6.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 12, 32)

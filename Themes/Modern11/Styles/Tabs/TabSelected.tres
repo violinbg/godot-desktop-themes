@@ -1,0 +1,16 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cjbmfgkjnkk5c"]
+
+[ext_resource type="Texture2D" uid="uid://ciqqtoyeovrux" path="res://Themes/Modern11/Styles/Tabs/TabSelected.png" id="1_w2f7a"]
+
+[resource]
+content_margin_left = 15.0
+content_margin_right = 15.0
+texture = ExtResource("1_w2f7a")
+texture_margin_left = 20.0
+texture_margin_top = 10.0
+texture_margin_right = 20.0
+texture_margin_bottom = 10.0
+expand_margin_bottom = 1.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 33, 33)

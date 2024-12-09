@@ -1,0 +1,275 @@
+[gd_scene load_steps=2 format=3 uid="uid://chfo8b0kmgwjy"]
+
+[ext_resource type="Script" path="res://Themes/TestDialog.gd" id="1_wxgor"]
+
+[node name="TestDialog" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wxgor")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0208333
+anchor_top = 0.037037
+anchor_right = 0.979167
+anchor_bottom = 0.962963
+grow_horizontal = 2
+grow_vertical = 2
+drag_to_rearrange_enabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Buttons" type="Control" parent="Control/TabContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Control/TabContainer/Buttons"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 9.0
+offset_right = 154.0
+offset_bottom = 41.0
+text = "Button 1"
+
+[node name="Button2" type="Button" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 9.0
+offset_right = 304.0
+offset_bottom = 41.0
+text = "Button 2"
+
+[node name="Button3" type="Button" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 9.0
+offset_right = 454.0
+offset_bottom = 41.0
+disabled = true
+text = "Disabled"
+
+[node name="Button4" type="Button" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 66.0
+offset_right = 454.0
+offset_bottom = 88.0
+toggle_mode = true
+text = "Toggle Button"
+
+[node name="Button5" type="Button" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 254.0
+offset_right = 454.0
+offset_bottom = 279.0
+text = "Tool Button"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 101.0
+offset_right = 455.0
+offset_bottom = 123.0
+
+[node name="OptionButton" type="OptionButton" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 135.0
+offset_right = 455.0
+offset_bottom = 157.0
+
+[node name="MenuButton" type="MenuButton" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 169.0
+offset_right = 455.0
+offset_bottom = 191.0
+text = "Menu Button"
+flat = false
+
+[node name="CheckButton" type="CheckButton" parent="Control/TabContainer/Buttons/Control"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 202.0
+offset_right = 455.0
+offset_bottom = 242.0
+text = "Check button"
+
+[node name="Panel" type="Panel" parent="Control/TabContainer/Buttons"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 66.0
+offset_right = 172.0
+offset_bottom = 157.0
+
+[node name="RadioBox1" type="CheckBox" parent="Control/TabContainer/Buttons/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 9.0
+offset_right = 95.0
+offset_bottom = 33.0
+text = "Option 1"
+
+[node name="RadioBox2" type="CheckBox" parent="Control/TabContainer/Buttons/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 35.0
+offset_right = 95.0
+offset_bottom = 59.0
+text = "Option 2"
+
+[node name="RadioBox3" type="CheckBox" parent="Control/TabContainer/Buttons/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 60.0
+offset_right = 95.0
+offset_bottom = 84.0
+disabled = true
+text = "Option 3"
+
+[node name="Check Boxes" type="Panel" parent="Control/TabContainer/Buttons"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 183.0
+offset_right = 172.0
+offset_bottom = 274.0
+
+[node name="CheckBox" type="CheckBox" parent="Control/TabContainer/Buttons/Check Boxes"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 7.0
+offset_right = 98.0
+offset_bottom = 31.0
+text = "Option 1"
+
+[node name="CheckBox2" type="CheckBox" parent="Control/TabContainer/Buttons/Check Boxes"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 34.0
+offset_right = 98.0
+offset_bottom = 58.0
+text = "Option 2"
+
+[node name="CheckBox3" type="CheckBox" parent="Control/TabContainer/Buttons/Check Boxes"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 60.0
+offset_right = 98.0
+offset_bottom = 84.0
+disabled = true
+text = "Option 3"
+
+[node name="Editors" type="Control" parent="Control/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Control/TabContainer/Editors"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 9.0
+offset_right = 459.0
+offset_bottom = 33.0
+text = "A nice texbox"
+
+[node name="LineEdit2" type="LineEdit" parent="Control/TabContainer/Editors"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 42.0
+offset_right = 459.0
+offset_bottom = 66.0
+text = "A read-only texbox"
+editable = false
+
+[node name="TextEdit" type="TextEdit" parent="Control/TabContainer/Editors"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 73.0
+offset_right = 459.0
+offset_bottom = 162.0
+text = "Multiline text edit control."
+
+[node name="TextEdit2" type="TextEdit" parent="Control/TabContainer/Editors"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 171.0
+offset_right = 459.0
+offset_bottom = 260.0
+text = "Multiline text edit control.
+But unfortunatly it's read-only.
+So you cannot edit it."
+
+[node name="SpinBox" type="SpinBox" parent="Control/TabContainer/Editors"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 266.0
+offset_right = 459.0
+offset_bottom = 290.0
+suffix = "px"
+
+[node name="Extra" type="Control" parent="Control/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="HScrollBar2" type="HScrollBar" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 42.0
+offset_right = 295.0
+step = 1.0
+page = 5.0
+value = 50.0
+
+[node name="VScrollBar" type="VScrollBar" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 42.0
+offset_bottom = 290.0
+step = 1.0
+page = 5.0
+value = 25.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 469.0
+offset_bottom = 32.0
+
+[node name="HSlider" type="HSlider" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 64.0
+offset_right = 293.0
+offset_bottom = 89.0
+
+[node name="VSeparator" type="VSeparator" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 42.0
+offset_right = 308.0
+offset_bottom = 290.0
+
+[node name="VSlider" type="VSlider" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 47.0
+offset_right = 379.0
+offset_bottom = 286.0
+
+[node name="Tree" type="Tree" parent="Control/TabContainer/Extra"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 94.0
+offset_right = 293.0
+offset_bottom = 286.0
